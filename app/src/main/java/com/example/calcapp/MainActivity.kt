@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button3.setOnClickListener(this)
         button4.setOnClickListener(this)
 
-        Snackbar.make(rootLayout, "数字を入力して下さい", Snackbar.LENGTH_INDEFINITE)
-            .setAction("Back") {
+        Snackbar.make(Layout, "数字を入力して下さい", Snackbar.LENGTH_INDEFINITE)
+            .setAction("OK") {
             }.show()
     }
 
@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
 
         } catch (e: Exception) {
+
         }
     }
 }
