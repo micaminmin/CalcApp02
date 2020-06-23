@@ -2,7 +2,6 @@ package com.example.calcapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
@@ -11,7 +10,7 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        val Result = intent.getIntExtra("Result", 0)
+        val Result = intent.getDoubleExtra("Result", 0.0)
 
         textView.text = "${Result}"
 

@@ -19,9 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         button3.setOnClickListener(this)
         button4.setOnClickListener(this)
 
-        Snackbar.make(Layout, "数字を入力して下さい", Snackbar.LENGTH_INDEFINITE)
-            .setAction("OK") {
-            }.show()
+
     }
 
     override fun onClick(v: View) {
@@ -53,6 +51,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
 
         } catch (e: Exception) {
+
+            Snackbar.make(v, "数字を入力して下さい", Snackbar.LENGTH_INDEFINITE)
+                .setAction("OK") {
+                }.show()
 
         }
     }
